@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>Cassandra Nicolak</title>
+	  	<meta charset="UTF-8">
+		<meta name="description" content="Cassandra Nicolak's Professional Portfolio Website">
+		<meta name="keywords" content="Cassandra Nicolak" />
+		<meta name="author" content="Cassandra Nicolak" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		  <meta property="og:url"           content="http://student.athabascau.ca/~cassandrani/unit7/" />
+		  <meta property="og:type"          content="website" />
+		  <meta property="og:title"         content="Cassandra Nicolak" />
+		  <meta property="og:description"   content="Cassandra Nicolak's Professional Portfolio Website" />
+		  
+		  <script src='https://www.google.com/recaptcha/api.js'></script>
+		  <script src="https://maps.google.com/maps/api/js?key=AIzaSyDPMrNsMtsvyYyzWJ2Nc5QRu3F21HWf1Fc"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
+		
+	  	<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	</head>
+	<body>
+	
+
+	
+		<!-- Menu -->
+		<div id="toc-holder" class="toc-holder">
+			<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
+				<ul id="toc" class="toc"> 
+					<li class="toc-h1"><a href="#headerblock">Summary</a></li>				
+					<li class="toc-h1"><a href="#about">About</a></li>
+					<li class="toc-h1"><a href="#resume">Résumé</a></li>
+					<li class="toc-h1"><a href="#projects">Projects</a></li>
+					<li class="toc-h1"><a href="#contact">Contact</a></li>					
+				</ul>
+	</div>
+
+
+
+	<div id="page-wrapper"></div>
+
+		<!-- Header Section -->
+		<div id="header">
+
+				<span class="left social">
+						<a target="_blank" href="mailto:cassandra.nicolak.ca"><img class="social" src="img/mail.png" alt="Contact Me"></a>&nbsp;
+						<a target="_blank" href="https://ca.linkedin.com/in/cnicolak"><img class="social" src="img/linkedin.png" alt="LinkedIn"></a>&nbsp;
+						<a target="_blank" href="https://github.com/CNicolak"><img class="social" src="img/git.png" alt="Git"></a>&nbsp;
+					</span>	
+
+			<div class="cont name"><a href="#headerblock">Cassandra  Nicolak</a></div>
+			<div class ="nav">
+			<ul class="mobile-nav">
+				<li class="mobile-header"><a href="#headerblock">Summary</a></li>				
+				<li class="mobile-header"><a href="#about">About</a></li>
+				<li class="mobile-header"><a href="#resume">Resumé</a></li>
+				<li class="mobile-header"><a href="#projects">Projects</a></li>
+				<li class="mobile-header"><a href="#contact">Contact</a></li>
+			</ul>			
+		</div>
+	</div>
+
+			<!-- Header: Button Page -->
+			<div id="headerblock">
+
+					<div class="page-container">
+
+							<div class="page">															
+							  <button class="pageaction m_code" onmouseover="openDev(event, 'CodeDev')"></button>
+							  <button class="pageaction m_web" onmouseover="openDev(event, 'WebDev')"></button>
+							  <button class="pageaction m_mobile" onmouseover="openDev(event, 'MobileDev')"></button>
+							  <button class="pageaction m_edu" onmouseover="openDev(event, 'EduSoft')"></button>
+							</div>
+							
+							
+							<div id="default" class="pagecontent">
+							  <h3>Welcome to my website! </h3>
+							  <p>Hover over the buttons below to get an idea of what I know.</p>							  
+							</div>
+							
+							<div id="CodeDev" class="pagecontent">
+							  <h3>Application Development</h3>
+							  <p>I have experience with developing documentation involving databases, Python, Java, Visual Basic.net and winforms.</p>
+							</div>
+							
+							<div id="WebDev" class="pagecontent">
+							  <h3>Web Development</h3>
+							  <p>I am in the process of updating my web development skills while making this website.</p> 
+							</div>
+							
+							<div id="MobileDev" class="pagecontent">
+							  <h3>Mobile Development</h3>
+							  <p>In Winter 2018 I will be porting an iOS application to a Windows desktop application.</p>
+							</div>
+							
+							<div id="EduSoft" class="pagecontent">
+							  <h3>Educational Software</h3>
+							  <p>Currently I volunteer at McMaster University's Outreach 
+								  program to introduce Computer Science concepts to young children.</p>
+							</div>
+							
+						</div>
+			</div>
+
+
+
+
+			<!-- About Me Section -->
+			<div id="about"><div class="cont">
+				
+					<h1>Software Developer and Engineering Student</h1>
+	
+						<!-- HTML/CSS Console 			** May need to re-add if mobile issues.
+							<div id="code">
+								<div id="console">							
+									<span class="input" id="str">&gt; Cassandra.location()</span>
+									<span class="output">=&gt; "Hamilton, ON"</span>
+									<span class="input">&gt; Cassandra.education(institution)</span>
+									<span class="output">=&gt; "McMaster University"</span>
+									<span class="input">&gt; Cassandra.education(major)</span>
+									<span class="output">=&gt; "Software Engineering"</span>
+									<span class="input">&gt; Cassandra.education(expectedGraduation)</span>
+									<span class="output">=&gt; "May 2020"</span>
+									<span class="input">&gt; Cassandra.interests()</span>
+									<span class="output">=&gt; ["Programming", "Game Development", "Digital Art", "Design", "Cats"]</span>
+									<span class="input">&gt; Cassandra.workExperience(recent)</span>
+									<span class="output">=&gt; Recent Work Experience<br/>
+														&nbsp;&nbsp; company: "ArcelorMittal Dofasco"<br/>
+														&nbsp;&nbsp; role: "Process Automation Analyst"<br/>
+														&nbsp;&nbsp; startDate: "May 2017"<br/>
+														&nbsp;&nbsp; endDate: "August 2018"
+														</span>
+									<span class="input">&gt; Cassandra.resume()</span>
+									<span class="output">=&gt; "<a target="_blank" href="CassandraNicolak_resume.pdf">CassandraNicolak_resume.pdf</a>"</span>
+									<span class="input">&gt; Cassandra.skills(summary)</span>
+									<span class="output">=&gt; ["Programming", "Web Development", "Data Modelling", "Databases"]</span>					
+									<span class="input">&gt; Cassandra.contact(email)<br/>
+									<span class="output">=&gt; "<a target="_blank" href="mailto:cassandra@nicolak.ca">cassandra@nicolak.ca</a>"</span>
+								</div>
+							</div>
+						-->
+
+				<!-- About Me: Code/Console -->						
+					<div id="code">					
+							<div id="console">	
+							<div class='prints'></div>
+						</div>
+						<div class='input-wrapper'>
+							<span class='inputTxt'></span>	
+						</div>
+					</div>
+				</div></div>
+
+
+
+
+
+			<!-- Résumé Section -->
+			<div id="resume"><div class="cont">
+				<p class="section-name">Résumé</p>
+				<!-- Résumé : Education -->
+				<p class="subsection-name" style="text-align:left;">Education</p>
+				<!-- Résumé : Education : McMaster University -->
+				<p>
+					<a target="_blank" href="http://www.mcmaster.ca"><img class="icon" src="img/mcmaster.png" alt="McMaster University"></a><strong>McMaster University</strong>
+						<span class="right"><em>Class of 2023</em></span><br><strong>Software Engineering, B.Eng</strong>
+						<span class="right"><em>Hamilton, ON</em></span><br><br>
+						Relevant Courses:
+						</p>
+									<button class="course"> Software Development Skills	</button>
+									<div class="content"><p>Unix and shell programming, makefiles, version control; assembly basics, translating high-level language into assembly, parameter passing, arrays, recursion; compiling, debugging, profiling, and software optimizations.</p></div>
+									<button class="course">Principles of Programming</button>
+									<div class="content"><p>Fundamental concepts of programming: expressions, statements, procedures, control structures, iteration, recursion, exceptions; precise memory model of traditional imperative programming languages; basic data structures: records, arrays, dynamic structures; use of libraries.</p></div>									
+									<button class="course">Data Structures and Algorithms</button>
+									<div class="content"><p>Basic data structures: stacks, queues, hash tables, and binary trees; searching and sorting; graph representations and algorithms, including minimum spanning trees, traversals, shortest paths; introduction to algorithmic design strategies; correctness and performance analysis.</p></div>									
+									<button class="course">Software Testing</button>
+									<div class="content"><p>Measurements. Unit testing, slicing and debugging, integration testing, regression testing, testing strategies, test coverage.</p></div>									
+									<button class="course">Databases</button>
+									<div class="content"><p>Data modeling, integrity constraints, principles and design of relational databases, relational algebra, SQL, query processing, transactions, concurrency control, recovery, security and data storage.</p></div>									
+									<button class="course">Real-Time Systems and Control Applications</button>
+									<div class="content"><p>Hard and soft real-time systems. Safety classification. Fail-safe design, hazard analysis. Discrete event systems. Modes. Requirements and design specifications. Tasks and scheduling. Clock synchronization. Data acquisition. Applications in real-time control.</p></div>
+									<button class="course">Computer Networks and Security</button>
+									<div class="content"><p>Physical networks, TCP/IP protocols, switching methods, network layering and components, network services. Information security, computer and network security threats, defense mechanisms, encryption.</p></div>
+									<button class="course">Human Computer Interfaces</button>
+									<div class="content"><p>Design of user interfaces. Principles of good interface design. Human input. Displaying complex data using graphics and virtual reality. Modes and mode awareness problem. Health issues, information overload. Special purpose graphics hardware. Interface design tools; on-line help systems.</p></div>
+									<button class="course">Software Project Management </button>
+									<div class="content"><p>Open-ended software development emphasizing concurrent system design; measurement, inspection, software metrics, software project management; testing methods.</p></div>
+									<button class="course">Binding Theory to Practice </button>
+									<div class="content"><p>Open-ended design of computational solutions to practical problems that involve both theoretical (algorithmic) analysis and implementation; solving computational problems through an experiential approach; revision and version control.</p></div>									
+									<button class="course">Software Design I - Introduction to Software Development </button>		
+									<div class="content"><p>Software life cycle, quality attributes, requirements documentation, specifying behavior; classes and objects, interface specification; creational, structural, and behavioral software design patterns; implementation in code, reviews, testing and verification.</p></div>			
+									<button class="course">Software Design III - Large System Design </button>		
+									<div class="content"><p>Sustainable architectures; design for change and expansion; software architecture design space; object oriented analysis and design; architectural styles; methodology of making architecture decisions; project organization.</p></div>	
+									<button class="course">Software Design II - Concurrent System Design </button>		
+									<div class="content"><p>Processes, threads, concurrency; synchronization mechanisms, resource management and sharing; objects and concurrency; design, architecture and testing of concurrent systems.</p></div>																				
+
+						<a target="_blank" href="https://academiccalendars.romcmaster.ca/preview_program.php?catoid=32&poid=18450"><u>See full program listing.</u></a><br><br>
+								
+					<span class="skill">Java</span>
+					<span class="skill">Python</span>
+					<span class="skill">C/C++</span>
+					<span class="skill">UNIX</span>
+					<span class="skill">Git</span>
+			
+				<br/><br/>
+
+				<!-- Résumé : Education : Athlabasca University -->
+				<p>
+					<a target="_blank" href="http://www.athabascau.ca/syllabi/comp/comp266.php"><img class="icon" src="img/athabasca.png" alt="Athabasca University"></a><strong>Athlabasca University</strong>
+					<span class="right"><em>Winter 2018</em></span><br/>
+					<strong>Online Study</strong>
+					<span class="right"><em>Athabasca, AB</em></span><br/><br/>
+					Technical elective course that involved creating and designing a dynamic website and its design documentation. Learned how to apply a structured approach to identifying needs, interests, and functionality of a website.
+					<br/><br/>
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>					
+					<span class="skill">JAVASCRIPT</span>
+					<span class="skill">JQUERY</span>
+					<span class="skill">JSON</span>					
+					<span class="skill">AJAX</span>					
+				</p>
+				<br/><br/>
+
+				<!-- Résumé : Work Experience -->
+				<p class="subsection-name" style="text-align:left;">Work Experience</p>
+
+				<!-- Résumé : Work Experience : ArcelorMittal Dofasco -->
+				<p>
+					<a target="_blank" href="https://dofasco.arcelormittal.com/"><img class="icon" src="img/dofasco.png" alt="ArcelorMittal Dofasco"></a><strong>ArcelorMittal Dofasco</strong>
+					<span class="right"><em>2017 - 2018</em></span><br/>
+					<strong>Process Automation Analyst</strong><br><br>
+						<!--Full-Time Internship:<br/> -->
+						<ul style="list-style:circle;">
+									<li>Created various small Python scripts to automate routine tasks. Some examples: data extraction parser with regex, SSIS package maker, SQL Server table maker, transposing and manipulating data in an Excel sheet.</li>
+									<li>Used SQL Server Integration Services (SSIS) to transform and move data from an Oracle database to an SQL server database.</li>
+									<li>Modified SSIS packages for SharePoint Online migration.</li>
+									<li>Created many tables, views and stored procedures using SQL Server Management Studio.</li>
+									<li>Used SQL Server Analysis Services (SSAS) to create a cube for the Hot Mill. Created over 400 DAX calculations.</li>
+									<li>Created an Alerts Application in Visual Basic.NET that displayed alerts once the service inspection system wrote lines to a database table.</li>
+									<li>Designed and produced a Hot Mill Piece Compare utility in Visual Basic.NET that compared Hot Mill piece data across multiple Oracle databases and displayed discrepancies.</li>
+									<li>Built an authentication application in Visual Basic.NET that allowed the Business Unit Contact to modify permissions for users using Hot Mill applications.</li>
+									<li>Collaborated with the development of a C# Messaging Queue program that streamed data to a Power BI dashboard.</li>
+									<li>Provided mentorship and guidance to an intern while troubleshooting and debugging a large Quality Monitoring System application in Visual Basic.NET.</li>
+							</ul>
+					<span class="skill">HTML</span>
+					<span class="skill">Visual Basic.NET</span>
+					<span class="skill">PYTHON</span>
+					<span class="skill">C#</span>
+					<span class="skill">CYGWIN/VIM</span>
+					<span class="skill">REGEX</span>
+					<span class="skill">Visual Studio</span>
+					<span class="skill">MS Excel VBA</span>
+					<span class="skill">MS Access</span>
+					<span class="skill">Message Queue</span>
+					<span class="skill">SVN</span>
+					<span class="skill">Oracle/ SQL Developer</span>
+					<span class="skill">SQL Server/MSMS</span>
+					<span class="skill">SSIS</span>
+					<span class="skill">SSAS</span>
+					<span class="skill">Power BI</span>
+				</p>
+				<br/><br/>
+
+
+				<!-- Résumé : Volunteer Work -->
+				<p class="subsection-name" style="text-align:left;">Volunteer Work</p>
+				<!-- Résumé : Volunteer Work : Computing & Software Outreach -->
+				<p>
+					<a target="_blank" href="http://outreach.mcmaster.ca/"><img class="icon" src="img/macoutreach.png" alt="McMaster University's Software Outreach Program"></a><strong>Computing and Software Outreach</strong>
+						<span class="right"><em>2016 - 2017</em></span><br/>
+					<strong>Software Outreach Leader</strong>
+						<span class="right"><em>Hamilton, ON</em></span><br/>
+						<ul style="list-style:circle;">
+									<li>Assisted with the development of interactive software applications using ELM.</li>
+									<li>Coordinator for McMaster's igniteCS program.</li>
+									<li>Visited schools in the HWDSB area to introduce to and teach students about programming.</li>
+									<li>Attended conferences. </li>
+						
+			</ul>				
+					<span class="skill">Elm</span>
+					<span class="skill">Git</span>
+					<span class="skill">Apple Apps</span>
+				</p>
+				<br/>
+				<!-- Résumé : Volunteer Work : Computing & Software Outreach 
+				<p>
+					<a target="_blank" href="https://youthprograms.eng.mcmaster.ca/outreach"><img class="icon" src="img/mcmaster.png" alt="McMaster University"></a><strong>McMaster University</strong>
+						<span class="right"><em>2014</em></span><br/>
+					<strong>Engineering Outreach Volunteer</strong>
+						<span class="right"><em>Hamilton, ON</em></span><br/>
+						<ul style="list-style:circle;">
+									<li>Participated in the Engineering I Outreach event: May@Mac 2014.</li>
+									<li>Provided information about the Engineering program to prospective high school students.</li>
+
+								</ul>			
+					<span class="skill">Elm</span>
+					<span class="skill">Git</span>
+					<span class="skill">Apple Apps</span>
+				</p>-->
+
+			</div></div>
+			
+
+
+			<!-- Project Section -->
+			<!-- Project Section: Slideshow -->
+			<div id="projects"><div class="cont">
+			
+			
+	<!-- 	Resource: w3schools.com
+			URL: 	  https://www.w3schools.com/howto/howto_js_slideshow.asp 	-->
+			
+			<!-- *Slideshow container -->
+			<p class="section-name section-name-drk">Projects</p>
+			
+			<div class="projects-description projects-main">
+					<p class="projects-description"><strong>Welcome.</strong>&nbsp;&nbsp; I have completed many academic and workplace projects. Please see a few examples below.
+					</p>
+			</div>	
+
+			<div class="slideshow-container">
+				  <!-- Full-width images with number and caption text -->
+				  <div class="mySlides fade">
+					<img src="img/mosaic.png" class="slide-img">
+					<div class="text">
+						<h2>Mosaic Import</h2>
+						<p>For my Software Project Management course I had to work in a group of three to reimplement an open source project. We took a schedule importer for another school that was a Chrome extension and ported it over to a Python desktop application for McMaster University.</p>
+						<a target="_blank" href="https://gitlab.cas.mcmaster.ca/liangw15/3XA3Project" class="content-button">GitHub</a>					
+					</div>
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="img/beer.png" class="slide-img">
+					<div class="text">
+						<h2>Beer Review App</h2>
+						<p>For my Software Design course, I had to work in a group of five where we designed a Beer Review application in Java. The primary goal was to implement graphing algorithms and to demonstrate practical use cases.</p>
+					</div>
+				  </div>
+
+				  <div class="mySlides fade">
+					<img src="img/winforms.png" class="slide-img">
+					<div class="text">
+						<h2>Employee Permissions Application</h2>
+						<p>A user-friendly application that a Business Unit Contact could use to modify an employee's application permissions.</p>
+						</div>
+					<!-- <strong>Piece Compare</strong>&nbsp;&nbsp; An internal intern project at Dofasco. I designed a Piece Compare application in two days to assist with simulations of a major automation upgrade initiative in the Hot Mill process automation group. -->
+				  </div>
+				  <!-- -->
+				  <div class="mySlides fade">
+					<img src="img/webproj.png" class="slide-img">
+					<div class="text">
+						<h2>Personal Website</h2>
+						<p>The current website you are browsing was an objective of a web design course taken at Athlabasca University. This involved reflections, web design documentation and web development. This website is still a work in progress. </p>
+						<a target="_blank" href="http://student.athabascau.ca/~cassandrani/unit7/index.html" class="content-button">Full Site</a>					
+					</div>
+					<!-- <strong>Personal Website</strong>&nbsp;&nbsp; -->
+				  </div>
+
+				  <!-- Next and previous buttons -->
+
+				  <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="changeSlides(1)">&#10095;</a>
+			</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+				
+
+			<!-- End Slideshow container -->
+
+			</div></div>
+
+
+
+			<!-- Contact Section -->
+			<div id="contact"><div class="cont"></div>			
+			<!-- Contact Section: Contact Form -->
+			
+			<!-- Contact: Form -->
+			<div class=contact-container>
+					<p class="section-name section-name-drk">Contact</p>
+
+
+					<!-- Ajax Contact Form -->
+					<!--
+						REFERENCE: Themehunt.com 
+						Author: Saifur Rahman
+						URL: https://themehunt.com/blog/53-tutorial/162-how-to-create-an-ajax-contact-form-without-any-plugin
+					-->
+
+					<div class="formwrap">
+						<form class="formbox" method="post" action="contactform.php">
+						
+						<!-- form element -->
+						<label for="name" class="formlabel">Name</label>  
+						<input name="name" type="text" class="formfield" placeholder="Name" required>
+						
+						<label for="email" class="formlabel">Email</label> 
+						<input name="email" type="text" class="formfield" placeholder="Email Address" required>
+							
+						<label for="phone" class="formlabel">Phone</label>  
+						<input name="phone" type="text" class="formfield" placeholder="Phone" required>
+						
+							
+						<label for="subject" class="formlabel">Subject</label>  
+						<input name="subject" type="text" class="formfield" placeholder="Subject" required>
+						
+							
+						<label for="message" class="formlabel">Message</label> 
+						<textarea name="message" class="formtextfield" placeholder="write your message here" required></textarea>
+							
+							
+						<div class="g-recaptcha" data-sitekey="6LeOvH0UAAAAAKdj7qW07IJlyv4Fd07GTN8jbPFK"></div>
+							
+							
+						<input name="submit" type="submit" class="formbutton" value="Send Message">
+						<!-- end form element -->
+						<!-- form message -->
+					
+						<div class="contact__msg" style="display: none">
+						<p>Your message was sent successfully.</p>
+						</div>
+					<!-- End Message -->
+						</form>
+
+
+						<!-- Contact: Google Maps -->
+						<!-- Tutorial Reference: https://tutorialzine.com/2018/05/the-simplest-way-to-add-google-maps -->												
+						<div class="map-container"><div class="map-test"><div id="map"></div></div></div>
+
+					</div>  
+				</div>
+
+
+
+			</div></div>
+
+						
+			<!-- Footer -->		
+			<div  id ="footer"><div class="cont">
+				© 2018 Cassandra Nicolak
+
+				<!-- Social Media icons -->	
+				<span class="right">
+					<!-- Facebook --><iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fstudent.athabascau.ca%2F~cassandrani%2Funit7%2Fcomp266%2Findex.html&layout=button&size=large&mobile_iframe=true&width=74&height=28&appId" width="74" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					<!-- Twitter  --><a href="https://twitter.com/intent/tweet?text=Check%20out%20:%20http://student.athabascau.ca/~cassandrani/unit7/comp266/" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a>
+					<!-- Linkedin --><!--<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><script type="IN/Share" data-url="http://student.athabascau.ca/~cassandrani/unit7/comp266/"></script>-->	
+				</span>
+
+			</div></div>
+
+
+
+	</div>		<!-- page-wrapper closing div -->
+		
+
+
+
+
+		<!-- Script Files -->	
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>		
+		<script src="js/ajax.js"></script>		
+		<script src="js/script.js"></script>
+		<script src="js/jquery.fixedTOC.js?v=3.0"></script>
+		<script src="js/console.js"></script>			
+		<script>
+		// call the plugin on the "#toc" element
+		$('#toc').fixedTOC({
+			menuOpens: 'click', // or 'mouseenter'
+			scrollSpeed: 1000,
+			menuSpeed: 300,
+			useSubMenus: false,
+			resetSubMenus: false,
+			topLinkWorks: true
+		});
+		</script>
+
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	</body>
+</html>
+
+
